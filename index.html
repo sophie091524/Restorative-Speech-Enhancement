@@ -45,12 +45,12 @@
     <!-- Abstract -->
     <p class="auto-style5">&nbsp;</p>
     <p class="style2", style="color:blue;"><strong><span class="auto-style6"><u>Abstract</u></span></strong></p>
-    <p align="justify" class="auto-style5-j"> In challenging environments with significant noise and reverberation, traditional speech enhancement (SE) methods often lead to over-suppressed speech, which not only creates artifacts during listening but also harms the performance of downstream tasks. To overcome these limitations, we propose a novel approach called "Restorative SE", which combines a lightweight SE module with a generative codec module to progressively enhance and restore speech quality. The SE module initially attenuates noise, while the codec module is employed in a subsequent stage to perform dereverberation and restore the speech through its generative capabilities. We systematically explore various quantization techniques within the codec module to optimize performance. Additionally, we introduce a weighted loss function and adopt a layer of feature fusion, where the SE output is fused with the mixture to enhance the restoration process, particularly in scenarios where the SE output is heavily distorted. Experimental results demonstrate the effectiveness of our proposed method in enhancing speech quality under adverse conditions.
+    <p align="justify" class="auto-style5-j"> In challenging environments with significant noise and reverberation, traditional speech enhancement (SE) methods often lead to over-suppressed speech, creating artifacts during listening and harming downstream tasks performance. To overcome these limitations, we propose a novel approach called Restorative SE (RestSE), which combines a lightweight SE module with a generative codec module to progressively enhance and restore speech quality. The SE module initially reduces noise, while the codec module subsequently performs dereverberation and restores speech using generative capabilities. We systematically explore various quantization techniques within the codec module to optimize performance. Additionally, we introduce a weighted loss function and feature fusion that merges the SE output with the original mixture, particularly at segments where the SE output is heavily distorted. Experimental results demonstrate the effectiveness of our proposed method in enhancing speech quality under adverse conditions. 
     </p>
 
     <!-- Performance -->
     <p class="auto-style5">&nbsp;</p>
-    <p id="performance" , class="auto-style4", style="color:blue;"><strong><u>Separated Speech Signals using various approaches in the study</u></strong></p>
+    <p id="performance" , class="auto-style4", style="color:blue;"><strong><u>Results</u></strong></p>
 
         
     <!-- Audio 01 -----------------------------------------------------------------------------------------------------------------------> 
@@ -69,11 +69,11 @@
             </td>
             <td width="280">
             <p><center><audio width="260" controls><source src="demo/sim1/se.wav" type="audio/wav" >Your browser does not support the audio element.</audio></center></p>
-            <p><center><strong>Restorative SE-LSTM</strong></center></p>
+            <p><center><strong>LSTM (pretrained)</strong></center></p>
             </td>
             <td width="280">
             <p><center><audio width="260" controls><source src="demo/sim1/codec.wav" type="audio/wav" >Your browser does not support the audio element.</audio></center></p>
-            <p><center><strong>Restorative SE-codec</strong></center></p>
+            <p><center><strong>RestSE</strong></center></p>
             </td>
             <td width="280">
             <p><center><audio width="260" controls><source src="demo/sim1/heming.wav" type="audio/wav" >Your browser does not support the audio element.</audio></center></p>
@@ -95,11 +95,11 @@
             </td>
             <td width="280">
             <p><center><audio width="260" controls><source src="demo/sim2/se.wav" type="audio/wav" >Your browser does not support the audio element.</audio></center></p>
-            <p><center><strong>Restorative SE-LSTM</strong></center></p>
+            <p><center><strong>LSTM (pretrained)</strong></center></p>
             </td>
             <td width="280">
             <p><center><audio width="260" controls><source src="demo/sim2/codec.wav" type="audio/wav" >Your browser does not support the audio element.</audio></center></p>
-            <p><center><strong>Restorative SE-codec</strong></center></p>
+            <p><center><strong>RestSE</strong></center></p>
             </td>
             <td width="280">
             <p><center><audio width="260" controls><source src="demo/sim2/heming.wav" type="audio/wav" >Your browser does not support the audio element.</audio></center></p>
@@ -128,11 +128,11 @@
             </td>
             <td width="350">
             <p><center><audio width="330" controls><source src="demo/real/our_se.wav" type="audio/wav" >Your browser does not support the audio element.</audio></center></p>
-            <p><center><strong>Restorative SE-LSTM</strong></center></p>
+            <p><center><strong>LSTM (pretrained)</strong></center></p>
             </td>
             <td width="350">
             <p><center><audio width="330" controls><source src="demo/real/our_codec.wav" type="audio/wav" >Your browser does not support the audio element.</audio></center></p>
-            <p><center><strong>Restorative SE-codec</strong></center></p>
+            <p><center><strong>RestSE</strong></center></p>
             </td>
             <td width="350">
             <p><center><audio width="330" controls><source src="demo/real/heming.wav" type="audio/wav" >Your browser does not support the audio element.</audio></center></p>
